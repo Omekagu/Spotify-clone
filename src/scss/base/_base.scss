@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.app {
+  background-color: black;
+  &__container {
+    margin: auto;
+    max-width: 1440px;
+    background-color: azure;
+    height: 100vh;
+    @include flex(null, null, null);
+  }
+}

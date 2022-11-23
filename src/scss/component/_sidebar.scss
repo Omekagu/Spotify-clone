@@ -1,0 +1,27 @@
+.sidebar {
+  width: 20%;
+  min-width: 200px;
+  // height: 80vh;
+  padding: 20px;
+  @include flex(space-between, flex-start, column);
+  color: $color--white !important;
+  background-color: $bg--color;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+  &__list {
+    margin-bottom: auto;
+  }
+  &__list2 {
+    margin-bottom: auto;
+  }
+
+  &__footer {
+    p {
+      font-size: 1.5rem;
+
+      &:not(last-child) {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}

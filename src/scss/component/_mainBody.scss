@@ -1,0 +1,53 @@
+.mainbody {
+  width: 80%;
+
+  &__content {
+    position: relative;
+    z-index: 1;
+    color: $color--white;
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    height: 100vh;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding: 0 30px;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  &__box1 {
+    margin-top: 100px;
+
+    .top {
+      @include flex(space-between, center, row);
+      font-size: 1.5rem;
+
+      h2 {
+        text-transform: capitalize;
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      h3 {
+        text-transform: uppercase;
+        font-size: 1.3rem;
+        color: #aca5a5;
+        font-weight: 700;
+      }
+    }
+  }
+  &__artist {
+    @include flex(null, center, row);
+    margin: 20px 0;
+  }
+}
+.footer {
+  height: 100px;
+  border-top: 1px solid $bg--color-gray;
+  @include flex(space-between, center, row);
+  &__list {
+    @include flex(null, center, row);
+  }
+  &__social {
+  }
+}

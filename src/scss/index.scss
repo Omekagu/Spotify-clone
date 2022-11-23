@@ -1,0 +1,12 @@
+@import './base/mixins';
+@import './base/base';
+@import './base/variables';
+
+// COMPONENTS
+@import './component/mainBody.scss';
+@import './component/sidebar.scss';
+@import './component/logo';
+@import './component/navList';
+@import './component/header.scss';
+@import './component/airtistBox';
+@import './component/footerSocials';

@@ -1,0 +1,27 @@
+.social {
+  margin-top: 100px;
+  @include flex(space-between, flex-start, row);
+  &__item {
+    @include flex(space-between, flex-start, row);
+  }
+
+  &__list {
+    margin-right: 100px;
+  }
+  svg {
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    border-radius: 50px;
+    padding: 5px;
+    background-color: $bg--color-gray;
+
+    &:hover {
+      background-color: #bdacac;
+    }
+  }
+}
+.head {
+  font-size: 1.7rem !important;
+  color: $color--white;
+}

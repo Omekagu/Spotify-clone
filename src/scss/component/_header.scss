@@ -1,0 +1,64 @@
+.header {
+  height: 10vh;
+  background: rgba(100, 100, 100, 0.1);
+  position: sticky;
+  color: $color--white;
+  @include flex(space-between, center, row);
+  padding: 30px;
+  width: 80%;
+  font-size: 1.5rem;
+  position: absolute;
+  z-index: 100;
+
+  svg {
+    color: $color--white !important;
+    padding: 5px;
+    margin: 10px;
+    width: 30px;
+    height: 30px;
+    background-color: $bg--color;
+    border-radius: 50px;
+  }
+  &__list {
+    font-size: 1.7rem !important;
+    transition: all 0.1s ease-out;
+    transform: scaleX(0.9);
+    &:last-child {
+      margin-right: 20px;
+    }
+
+    &:hover {
+      transform: scaleX(1);
+    }
+  }
+
+  &__right {
+    @include flex(null, center, row);
+  }
+
+  &__sign {
+    font-size: 1.7rem;
+    padding: 0 20px;
+    opacity: 0.8;
+    border-left: 2px solid $color--white;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+  &__login {
+    padding: 10px 20px;
+    margin: 0 10px;
+    color: $bg--color;
+    background-color: $color--white;
+    border-radius: 30px;
+    font-size: 1.7rem;
+    transition: all 0.1s ease;
+    transform: scaleX(0.9);
+
+    &:hover {
+      background-color: whitesmoke;
+      transform: scaleX(1);
+    }
+  }
+}

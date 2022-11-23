@@ -1,0 +1,46 @@
+.artist {
+  @include flex(null, flex-start, column);
+  margin-right: 10px;
+  max-width: 200px;
+  height: 100%;
+  padding: 10px;
+  background-color: #0f0f0fcd;
+  border-radius: 10px;
+  gap: 10px;
+  transition: all 0.1s;
+
+  &__img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__info {
+    word-wrap: break-word;
+    text-transform: capitalize;
+  }
+  &__description {
+    width: 100%;
+    word-wrap: break-word;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  svg {
+    width: 45px;
+    height: 45px;
+    background-color: green;
+    border-radius: 50px;
+    position: absolute;
+    transform: translate(09rem, 9rem);
+    transition: all 1s;
+    opacity: 1;
+
+    // &:hover {
+    //   transform: translate(0rem, 20rem);
+    //   opacity: 1;
+    // }
+  }
+  &:hover {
+    background-color: #18171751;
+  }
+}
